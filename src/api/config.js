@@ -1,0 +1,1 @@
+export const baseUrl = "https://greetings.gear.host/api";

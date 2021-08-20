@@ -1,0 +1,14 @@
+.main-banner{
+    width: 100%;
+    height: 75vh;
+    position: relative;
+}
+
+.main-banner iframe,
+.main-banner video{
+    position: absolute;
+    min-height: 100%;
+    width: 100vw;
+    left: 0;
+    top: 0;
+}

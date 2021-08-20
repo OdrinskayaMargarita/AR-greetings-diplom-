@@ -1,0 +1,93 @@
+.body_section-product {
+    padding: 100px 0;
+}
+
+.body__product-list {
+    display: grid;
+    grid-template-columns: repeat(1, 290px);
+    grid-gap: 25px;
+    justify-content: center;
+    width: 100%;
+}
+
+.body__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.body__filter-h2 {
+    margin-bottom: 0;
+    padding-right: 25px;
+}
+
+.radio-filter{
+    margin-bottom: 25px;
+}
+
+.radio-filter .MuiFormControlLabel-root{
+    width: 100%;
+    display: block;
+}
+
+.MuiPagination-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.all-show {
+    padding: 10px;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #ff9800;
+    text-align: center;
+}
+
+.all-show .MuiButtonBase-root {
+    display: none;
+    color: darkblue;
+}
+
+@media (min-width: 540px) {
+    .body__product-list {
+        grid-template-columns: repeat(2, 48%);
+        justify-content: space-between;
+        grid-gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .body__product-list {
+        grid-template-columns: repeat(3, 32%);
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .body__prod-left-filter {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .radio-filter{
+        max-width: 200px;
+        width: 100%;
+        padding-right: 15px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .body__product-list {
+        grid-template-columns: repeat(4, 24%);
+    }
+    
+    .radio-filter{
+        max-width: 275px;
+    }
+}
